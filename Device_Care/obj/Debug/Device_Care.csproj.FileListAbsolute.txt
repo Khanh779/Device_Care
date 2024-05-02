@@ -1,0 +1,13 @@
+D:\Data\Tailieu\Projects\C#\Device_Care\Device_Care\bin\Debug\Device_Care.exe.config
+D:\Data\Tailieu\Projects\C#\Device_Care\Device_Care\bin\Debug\Device_Care.exe
+D:\Data\Tailieu\Projects\C#\Device_Care\Device_Care\bin\Debug\Device_Care.pdb
+D:\Data\Tailieu\Projects\C#\Device_Care\Device_Care\obj\Debug\Device_Care.csproj.AssemblyReference.cache
+D:\Data\Tailieu\Projects\C#\Device_Care\Device_Care\obj\Debug\Device_Care.Properties.Resources.resources
+D:\Data\Tailieu\Projects\C#\Device_Care\Device_Care\obj\Debug\Device_Care.csproj.GenerateResource.cache
+D:\Data\Tailieu\Projects\C#\Device_Care\Device_Care\obj\Debug\Device_Care.csproj.CoreCompileInputs.cache
+D:\Data\Tailieu\Projects\C#\Device_Care\Device_Care\obj\Debug\Device_Care.exe
+D:\Data\Tailieu\Projects\C#\Device_Care\Device_Care\obj\Debug\Device_Care.pdb
+D:\Data\Tailieu\Projects\C#\Device_Care\Device_Care\bin\Debug\HeCopUI_Framework.dll
+D:\Data\Tailieu\Projects\C#\Device_Care\Device_Care\obj\Debug\Device_C.2C068CF1.Up2Date
+D:\Data\Tailieu\Projects\C#\Device_Care\Device_Care\obj\Debug\Device_Care.Form1.resources
+D:\Data\Tailieu\Projects\C#\Device_Care\Device_Care\obj\Debug\Device_Care.Processes_Manager.resources
