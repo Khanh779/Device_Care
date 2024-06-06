@@ -7,7 +7,8 @@ D:\Data\Tailieu\Projects\C#\Device_Care\Device_Care\obj\Debug\Device_Care.csproj
 D:\Data\Tailieu\Projects\C#\Device_Care\Device_Care\obj\Debug\Device_Care.csproj.CoreCompileInputs.cache
 D:\Data\Tailieu\Projects\C#\Device_Care\Device_Care\obj\Debug\Device_Care.exe
 D:\Data\Tailieu\Projects\C#\Device_Care\Device_Care\obj\Debug\Device_Care.pdb
-D:\Data\Tailieu\Projects\C#\Device_Care\Device_Care\bin\Debug\HeCopUI_Framework.dll
 D:\Data\Tailieu\Projects\C#\Device_Care\Device_Care\obj\Debug\Device_C.2C068CF1.Up2Date
 D:\Data\Tailieu\Projects\C#\Device_Care\Device_Care\obj\Debug\Device_Care.Form1.resources
 D:\Data\Tailieu\Projects\C#\Device_Care\Device_Care\obj\Debug\Device_Care.Processes_Manager.resources
+D:\Data\Tailieu\Projects\C#\Device_Care\Device_Care\obj\Debug\Device_Care.Form2.resources
+D:\Data\Tailieu\Projects\C#\Device_Care\Device_Care\bin\Debug\HeCopUI_Framework.dll

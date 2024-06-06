@@ -64,6 +64,7 @@
             this.hCheckBox6 = new HeCopUI_Framework.Controls.HCheckBox();
             this.hRichTextBox1 = new HeCopUI_Framework.Controls.HRichTextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.LB_CntStartupApps = new System.Windows.Forms.Label();
             this.btn_reloadlistappstartup = new HeCopUI_Framework.Controls.HButton();
             this.btn_disappstartup = new HeCopUI_Framework.Controls.HButton();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -71,7 +72,6 @@
             this.CH_Path = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CH_Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.LB_CntStartupApps = new System.Windows.Forms.Label();
             this.hTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -96,12 +96,12 @@
             this.hTabControl1.Controls.Add(this.tabPage4);
             this.hTabControl1.CursorTabPages = System.Windows.Forms.Cursors.Default;
             this.hTabControl1.ItemSize = new System.Drawing.Size(73, 30);
-            this.hTabControl1.Location = new System.Drawing.Point(15, 51);
+            this.hTabControl1.Location = new System.Drawing.Point(15, 15);
             this.hTabControl1.Name = "hTabControl1";
             this.hTabControl1.SelectedIndex = 0;
             this.hTabControl1.SelectedTabColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(168)))), ((int)(((byte)(148)))));
             this.hTabControl1.SelectedTextColor = System.Drawing.Color.WhiteSmoke;
-            this.hTabControl1.Size = new System.Drawing.Size(630, 387);
+            this.hTabControl1.Size = new System.Drawing.Size(580, 356);
             this.hTabControl1.TabIndex = 0;
             this.hTabControl1.TabsColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(32)))), ((int)(((byte)(38)))));
             this.hTabControl1.TabStyle = HeCopUI_Framework.Enums.TabStyle.Style2;
@@ -130,7 +130,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 34);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(8, 3, 8, 8);
-            this.tabPage1.Size = new System.Drawing.Size(622, 349);
+            this.tabPage1.Size = new System.Drawing.Size(572, 318);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Quick Clean";
             // 
@@ -144,7 +144,7 @@
             this.hProgressBar1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.hProgressBar1.ForeColor = System.Drawing.Color.White;
             this.hProgressBar1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
-            this.hProgressBar1.Location = new System.Drawing.Point(8, 335);
+            this.hProgressBar1.Location = new System.Drawing.Point(8, 304);
             this.hProgressBar1.MaximumValue = 100;
             this.hProgressBar1.MinimumValue = 0;
             this.hProgressBar1.Name = "hProgressBar1";
@@ -154,7 +154,7 @@
             this.hProgressBar1.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(168)))), ((int)(((byte)(148)))));
             this.hProgressBar1.ProgressValue = 12;
             this.hProgressBar1.Radius = new HeCopUI_Framework.Struct.CornerRadius(2F, 2F, 2F, 2F);
-            this.hProgressBar1.Size = new System.Drawing.Size(606, 6);
+            this.hProgressBar1.Size = new System.Drawing.Size(556, 6);
             this.hProgressBar1.TabIndex = 7;
             this.hProgressBar1.Text = "hProgressBar1";
             // 
@@ -184,7 +184,7 @@
             this.hButton1.ImagePadding = new System.Windows.Forms.Padding(0);
             this.hButton1.ImageSize = new System.Drawing.Size(20, 20);
             this.hButton1.IsAutoSize = false;
-            this.hButton1.Location = new System.Drawing.Point(483, 299);
+            this.hButton1.Location = new System.Drawing.Point(433, 268);
             this.hButton1.Name = "hButton1";
             this.hButton1.Radius = new HeCopUI_Framework.Struct.CornerRadius(0F, 0F, 0F, 0F);
             this.hButton1.RippleColor = System.Drawing.Color.Black;
@@ -202,37 +202,41 @@
             this.hButton1.TextPadding = new System.Windows.Forms.Padding(0);
             this.hButton1.TextRenderHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.hButton1.TextTrim = System.Drawing.StringTrimming.EllipsisCharacter;
+            this.hButton1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.hButton1_MouseClick);
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(48, 204);
+            this.label3.ForeColor = System.Drawing.Color.Silver;
+            this.label3.Location = new System.Drawing.Point(48, 192);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(551, 38);
+            this.label3.Size = new System.Drawing.Size(505, 38);
             this.label3.TabIndex = 5;
             this.label3.Text = "Clearing cache files deletes temporary app data, freeing up space and potentially" +
     " improving performance.";
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(48, 130);
+            this.label2.ForeColor = System.Drawing.Color.Silver;
+            this.label2.Location = new System.Drawing.Point(48, 122);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(551, 38);
+            this.label2.Size = new System.Drawing.Size(505, 38);
             this.label2.TabIndex = 4;
             this.label2.Text = "Cleaning history files removes records of past activities, like browsing history " +
     "or recent documents, enhancing privacy and freeing up space.";
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(48, 52);
+            this.label1.ForeColor = System.Drawing.Color.Silver;
+            this.label1.Location = new System.Drawing.Point(48, 48);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(551, 42);
+            this.label1.Size = new System.Drawing.Size(505, 42);
             this.label1.TabIndex = 3;
             this.label1.Text = "Clearing temporary files deletes files made by the system or apps during operatio" +
     "ns, like cache and logs. It frees up space and can boost system performance.";
             // 
             // hCheckBox3
             // 
-            this.hCheckBox3.BorderBox = System.Drawing.Color.Gray;
+            this.hCheckBox3.BorderBox = System.Drawing.Color.Transparent;
             this.hCheckBox3.CheckBoxColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(168)))), ((int)(((byte)(148)))));
             this.hCheckBox3.CheckBoxColor2 = System.Drawing.Color.DodgerBlue;
             this.hCheckBox3.CheckBoxGradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
@@ -245,21 +249,22 @@
             this.hCheckBox3.DisabledCheckBoxColor = System.Drawing.Color.Gray;
             this.hCheckBox3.DisabledTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(187)))), ((int)(((byte)(189)))));
             this.hCheckBox3.EnabledTextColor = System.Drawing.Color.WhiteSmoke;
-            this.hCheckBox3.FocusBorderColor = System.Drawing.Color.Gray;
-            this.hCheckBox3.Location = new System.Drawing.Point(19, 171);
+            this.hCheckBox3.FocusBorderColor = System.Drawing.Color.Transparent;
+            this.hCheckBox3.Location = new System.Drawing.Point(19, 163);
             this.hCheckBox3.Name = "hCheckBox3";
             this.hCheckBox3.RippleAlpha = 60;
             this.hCheckBox3.RippleColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(168)))), ((int)(((byte)(148)))));
-            this.hCheckBox3.Size = new System.Drawing.Size(169, 30);
+            this.hCheckBox3.Size = new System.Drawing.Size(169, 28);
             this.hCheckBox3.TabIndex = 2;
             this.hCheckBox3.Text = "Clean up cache files";
             this.hCheckBox3.TextRenderHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.hCheckBox3.TextTrim = System.Drawing.StringTrimming.EllipsisCharacter;
-            this.hCheckBox3.UnCheckedBoxColor = System.Drawing.Color.Transparent;
+            this.hCheckBox3.UnCheckedBoxColor = System.Drawing.Color.Gray;
+            this.hCheckBox3.CheckedChanged += new System.EventHandler(this.hCheckBox3_CheckedChanged);
             // 
             // hCheckBox2
             // 
-            this.hCheckBox2.BorderBox = System.Drawing.Color.Gray;
+            this.hCheckBox2.BorderBox = System.Drawing.Color.Transparent;
             this.hCheckBox2.CheckBoxColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(168)))), ((int)(((byte)(148)))));
             this.hCheckBox2.CheckBoxColor2 = System.Drawing.Color.DodgerBlue;
             this.hCheckBox2.CheckBoxGradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
@@ -272,21 +277,22 @@
             this.hCheckBox2.DisabledCheckBoxColor = System.Drawing.Color.Gray;
             this.hCheckBox2.DisabledTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(187)))), ((int)(((byte)(189)))));
             this.hCheckBox2.EnabledTextColor = System.Drawing.Color.WhiteSmoke;
-            this.hCheckBox2.FocusBorderColor = System.Drawing.Color.Gray;
-            this.hCheckBox2.Location = new System.Drawing.Point(19, 97);
+            this.hCheckBox2.FocusBorderColor = System.Drawing.Color.Transparent;
+            this.hCheckBox2.Location = new System.Drawing.Point(19, 93);
             this.hCheckBox2.Name = "hCheckBox2";
             this.hCheckBox2.RippleAlpha = 60;
             this.hCheckBox2.RippleColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(168)))), ((int)(((byte)(148)))));
-            this.hCheckBox2.Size = new System.Drawing.Size(178, 30);
+            this.hCheckBox2.Size = new System.Drawing.Size(178, 28);
             this.hCheckBox2.TabIndex = 1;
             this.hCheckBox2.Text = "Clean up history files";
             this.hCheckBox2.TextRenderHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.hCheckBox2.TextTrim = System.Drawing.StringTrimming.EllipsisCharacter;
-            this.hCheckBox2.UnCheckedBoxColor = System.Drawing.Color.Transparent;
+            this.hCheckBox2.UnCheckedBoxColor = System.Drawing.Color.Gray;
+            this.hCheckBox2.CheckedChanged += new System.EventHandler(this.hCheckBox2_CheckedChanged);
             // 
             // hCheckBox1
             // 
-            this.hCheckBox1.BorderBox = System.Drawing.Color.Gray;
+            this.hCheckBox1.BorderBox = System.Drawing.Color.Transparent;
             this.hCheckBox1.CheckBoxColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(168)))), ((int)(((byte)(148)))));
             this.hCheckBox1.CheckBoxColor2 = System.Drawing.Color.DodgerBlue;
             this.hCheckBox1.CheckBoxGradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
@@ -299,17 +305,18 @@
             this.hCheckBox1.DisabledCheckBoxColor = System.Drawing.Color.Gray;
             this.hCheckBox1.DisabledTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(187)))), ((int)(((byte)(189)))));
             this.hCheckBox1.EnabledTextColor = System.Drawing.Color.WhiteSmoke;
-            this.hCheckBox1.FocusBorderColor = System.Drawing.Color.Gray;
+            this.hCheckBox1.FocusBorderColor = System.Drawing.Color.Transparent;
             this.hCheckBox1.Location = new System.Drawing.Point(19, 19);
             this.hCheckBox1.Name = "hCheckBox1";
             this.hCheckBox1.RippleAlpha = 60;
             this.hCheckBox1.RippleColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(168)))), ((int)(((byte)(148)))));
-            this.hCheckBox1.Size = new System.Drawing.Size(204, 30);
+            this.hCheckBox1.Size = new System.Drawing.Size(204, 28);
             this.hCheckBox1.TabIndex = 0;
             this.hCheckBox1.Text = "Clean up temporary files";
             this.hCheckBox1.TextRenderHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.hCheckBox1.TextTrim = System.Drawing.StringTrimming.EllipsisCharacter;
-            this.hCheckBox1.UnCheckedBoxColor = System.Drawing.Color.Transparent;
+            this.hCheckBox1.UnCheckedBoxColor = System.Drawing.Color.Gray;
+            this.hCheckBox1.CheckedChanged += new System.EventHandler(this.hCheckBox1_CheckedChanged);
             // 
             // tabPage2
             // 
@@ -326,7 +333,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 34);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(8, 3, 8, 8);
-            this.tabPage2.Size = new System.Drawing.Size(622, 349);
+            this.tabPage2.Size = new System.Drawing.Size(572, 318);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Disk Defrag";
             // 
@@ -334,6 +341,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.ForeColor = System.Drawing.Color.Silver;
             this.label6.Location = new System.Drawing.Point(25, 21);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(322, 17);
@@ -350,7 +358,7 @@
             this.hProgressBar2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.hProgressBar2.ForeColor = System.Drawing.Color.White;
             this.hProgressBar2.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
-            this.hProgressBar2.Location = new System.Drawing.Point(8, 335);
+            this.hProgressBar2.Location = new System.Drawing.Point(8, 304);
             this.hProgressBar2.MaximumValue = 100;
             this.hProgressBar2.MinimumValue = 0;
             this.hProgressBar2.Name = "hProgressBar2";
@@ -360,7 +368,7 @@
             this.hProgressBar2.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(168)))), ((int)(((byte)(148)))));
             this.hProgressBar2.ProgressValue = 12;
             this.hProgressBar2.Radius = new HeCopUI_Framework.Struct.CornerRadius(2F, 2F, 2F, 2F);
-            this.hProgressBar2.Size = new System.Drawing.Size(606, 6);
+            this.hProgressBar2.Size = new System.Drawing.Size(556, 6);
             this.hProgressBar2.TabIndex = 9;
             this.hProgressBar2.Text = "hProgressBar2";
             // 
@@ -369,7 +377,7 @@
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Location = new System.Drawing.Point(194, 185);
+            this.label5.Location = new System.Drawing.Point(171, 185);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(47, 17);
             this.label5.TabIndex = 8;
@@ -401,7 +409,7 @@
             this.hButton2.ImagePadding = new System.Windows.Forms.Padding(0);
             this.hButton2.ImageSize = new System.Drawing.Size(20, 20);
             this.hButton2.IsAutoSize = false;
-            this.hButton2.Location = new System.Drawing.Point(480, 289);
+            this.hButton2.Location = new System.Drawing.Point(433, 268);
             this.hButton2.Name = "hButton2";
             this.hButton2.Radius = new HeCopUI_Framework.Struct.CornerRadius(0F, 0F, 0F, 0F);
             this.hButton2.RippleColor = System.Drawing.Color.Black;
@@ -442,14 +450,14 @@
             this.flowLayoutPanel2.Controls.Add(this.hCheckBox10);
             this.flowLayoutPanel2.Controls.Add(this.hCheckBox11);
             this.flowLayoutPanel2.Controls.Add(this.hCheckBox12);
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(197, 209);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(174, 209);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(245, 105);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(239, 84);
             this.flowLayoutPanel2.TabIndex = 4;
             // 
             // hCheckBox7
             // 
-            this.hCheckBox7.BorderBox = System.Drawing.Color.Gray;
+            this.hCheckBox7.BorderBox = System.Drawing.Color.Transparent;
             this.hCheckBox7.CheckBoxColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(168)))), ((int)(((byte)(148)))));
             this.hCheckBox7.CheckBoxColor2 = System.Drawing.Color.DodgerBlue;
             this.hCheckBox7.CheckBoxGradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
@@ -462,7 +470,7 @@
             this.hCheckBox7.DisabledCheckBoxColor = System.Drawing.Color.Gray;
             this.hCheckBox7.DisabledTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(187)))), ((int)(((byte)(189)))));
             this.hCheckBox7.EnabledTextColor = System.Drawing.Color.WhiteSmoke;
-            this.hCheckBox7.FocusBorderColor = System.Drawing.Color.Gray;
+            this.hCheckBox7.FocusBorderColor = System.Drawing.Color.Transparent;
             this.hCheckBox7.Location = new System.Drawing.Point(3, 3);
             this.hCheckBox7.Name = "hCheckBox7";
             this.hCheckBox7.RippleAlpha = 60;
@@ -472,11 +480,11 @@
             this.hCheckBox7.Text = "Analyze";
             this.hCheckBox7.TextRenderHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.hCheckBox7.TextTrim = System.Drawing.StringTrimming.EllipsisCharacter;
-            this.hCheckBox7.UnCheckedBoxColor = System.Drawing.Color.Transparent;
+            this.hCheckBox7.UnCheckedBoxColor = System.Drawing.Color.Gray;
             // 
             // hCheckBox8
             // 
-            this.hCheckBox8.BorderBox = System.Drawing.Color.Gray;
+            this.hCheckBox8.BorderBox = System.Drawing.Color.Transparent;
             this.hCheckBox8.CheckBoxColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(168)))), ((int)(((byte)(148)))));
             this.hCheckBox8.CheckBoxColor2 = System.Drawing.Color.DodgerBlue;
             this.hCheckBox8.CheckBoxGradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
@@ -489,7 +497,7 @@
             this.hCheckBox8.DisabledCheckBoxColor = System.Drawing.Color.Gray;
             this.hCheckBox8.DisabledTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(187)))), ((int)(((byte)(189)))));
             this.hCheckBox8.EnabledTextColor = System.Drawing.Color.WhiteSmoke;
-            this.hCheckBox8.FocusBorderColor = System.Drawing.Color.Gray;
+            this.hCheckBox8.FocusBorderColor = System.Drawing.Color.Transparent;
             this.hCheckBox8.Location = new System.Drawing.Point(99, 3);
             this.hCheckBox8.Name = "hCheckBox8";
             this.hCheckBox8.RippleAlpha = 60;
@@ -499,11 +507,11 @@
             this.hCheckBox8.Text = "BootOptimize";
             this.hCheckBox8.TextRenderHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.hCheckBox8.TextTrim = System.Drawing.StringTrimming.EllipsisCharacter;
-            this.hCheckBox8.UnCheckedBoxColor = System.Drawing.Color.Transparent;
+            this.hCheckBox8.UnCheckedBoxColor = System.Drawing.Color.Gray;
             // 
             // hCheckBox9
             // 
-            this.hCheckBox9.BorderBox = System.Drawing.Color.Gray;
+            this.hCheckBox9.BorderBox = System.Drawing.Color.Transparent;
             this.hCheckBox9.CheckBoxColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(168)))), ((int)(((byte)(148)))));
             this.hCheckBox9.CheckBoxColor2 = System.Drawing.Color.DodgerBlue;
             this.hCheckBox9.CheckBoxGradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
@@ -516,7 +524,7 @@
             this.hCheckBox9.DisabledCheckBoxColor = System.Drawing.Color.Gray;
             this.hCheckBox9.DisabledTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(187)))), ((int)(((byte)(189)))));
             this.hCheckBox9.EnabledTextColor = System.Drawing.Color.WhiteSmoke;
-            this.hCheckBox9.FocusBorderColor = System.Drawing.Color.Gray;
+            this.hCheckBox9.FocusBorderColor = System.Drawing.Color.Transparent;
             this.hCheckBox9.Location = new System.Drawing.Point(3, 39);
             this.hCheckBox9.Name = "hCheckBox9";
             this.hCheckBox9.RippleAlpha = 60;
@@ -526,11 +534,11 @@
             this.hCheckBox9.Text = "Defrag";
             this.hCheckBox9.TextRenderHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.hCheckBox9.TextTrim = System.Drawing.StringTrimming.EllipsisCharacter;
-            this.hCheckBox9.UnCheckedBoxColor = System.Drawing.Color.Transparent;
+            this.hCheckBox9.UnCheckedBoxColor = System.Drawing.Color.Gray;
             // 
             // hCheckBox10
             // 
-            this.hCheckBox10.BorderBox = System.Drawing.Color.Gray;
+            this.hCheckBox10.BorderBox = System.Drawing.Color.Transparent;
             this.hCheckBox10.CheckBoxColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(168)))), ((int)(((byte)(148)))));
             this.hCheckBox10.CheckBoxColor2 = System.Drawing.Color.DodgerBlue;
             this.hCheckBox10.CheckBoxGradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
@@ -543,7 +551,7 @@
             this.hCheckBox10.DisabledCheckBoxColor = System.Drawing.Color.Gray;
             this.hCheckBox10.DisabledTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(187)))), ((int)(((byte)(189)))));
             this.hCheckBox10.EnabledTextColor = System.Drawing.Color.WhiteSmoke;
-            this.hCheckBox10.FocusBorderColor = System.Drawing.Color.Gray;
+            this.hCheckBox10.FocusBorderColor = System.Drawing.Color.Transparent;
             this.hCheckBox10.Location = new System.Drawing.Point(99, 39);
             this.hCheckBox10.Name = "hCheckBox10";
             this.hCheckBox10.RippleAlpha = 60;
@@ -553,11 +561,11 @@
             this.hCheckBox10.Text = "Retrim";
             this.hCheckBox10.TextRenderHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.hCheckBox10.TextTrim = System.Drawing.StringTrimming.EllipsisCharacter;
-            this.hCheckBox10.UnCheckedBoxColor = System.Drawing.Color.Transparent;
+            this.hCheckBox10.UnCheckedBoxColor = System.Drawing.Color.Gray;
             // 
             // hCheckBox11
             // 
-            this.hCheckBox11.BorderBox = System.Drawing.Color.Gray;
+            this.hCheckBox11.BorderBox = System.Drawing.Color.Transparent;
             this.hCheckBox11.CheckBoxColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(168)))), ((int)(((byte)(148)))));
             this.hCheckBox11.CheckBoxColor2 = System.Drawing.Color.DodgerBlue;
             this.hCheckBox11.CheckBoxGradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
@@ -570,7 +578,7 @@
             this.hCheckBox11.DisabledCheckBoxColor = System.Drawing.Color.Gray;
             this.hCheckBox11.DisabledTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(187)))), ((int)(((byte)(189)))));
             this.hCheckBox11.EnabledTextColor = System.Drawing.Color.WhiteSmoke;
-            this.hCheckBox11.FocusBorderColor = System.Drawing.Color.Gray;
+            this.hCheckBox11.FocusBorderColor = System.Drawing.Color.Transparent;
             this.hCheckBox11.Location = new System.Drawing.Point(3, 75);
             this.hCheckBox11.Name = "hCheckBox11";
             this.hCheckBox11.RippleAlpha = 60;
@@ -580,11 +588,11 @@
             this.hCheckBox11.Text = "Optimize";
             this.hCheckBox11.TextRenderHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.hCheckBox11.TextTrim = System.Drawing.StringTrimming.EllipsisCharacter;
-            this.hCheckBox11.UnCheckedBoxColor = System.Drawing.Color.Transparent;
+            this.hCheckBox11.UnCheckedBoxColor = System.Drawing.Color.Gray;
             // 
             // hCheckBox12
             // 
-            this.hCheckBox12.BorderBox = System.Drawing.Color.Gray;
+            this.hCheckBox12.BorderBox = System.Drawing.Color.Transparent;
             this.hCheckBox12.CheckBoxColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(168)))), ((int)(((byte)(148)))));
             this.hCheckBox12.CheckBoxColor2 = System.Drawing.Color.DodgerBlue;
             this.hCheckBox12.CheckBoxGradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
@@ -597,7 +605,7 @@
             this.hCheckBox12.DisabledCheckBoxColor = System.Drawing.Color.Gray;
             this.hCheckBox12.DisabledTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(187)))), ((int)(((byte)(189)))));
             this.hCheckBox12.EnabledTextColor = System.Drawing.Color.WhiteSmoke;
-            this.hCheckBox12.FocusBorderColor = System.Drawing.Color.Gray;
+            this.hCheckBox12.FocusBorderColor = System.Drawing.Color.Transparent;
             this.hCheckBox12.Location = new System.Drawing.Point(99, 75);
             this.hCheckBox12.Name = "hCheckBox12";
             this.hCheckBox12.RippleAlpha = 60;
@@ -607,7 +615,7 @@
             this.hCheckBox12.Text = "TierOptimize";
             this.hCheckBox12.TextRenderHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.hCheckBox12.TextTrim = System.Drawing.StringTrimming.EllipsisCharacter;
-            this.hCheckBox12.UnCheckedBoxColor = System.Drawing.Color.Transparent;
+            this.hCheckBox12.UnCheckedBoxColor = System.Drawing.Color.Gray;
             // 
             // list_drives
             // 
@@ -620,7 +628,7 @@
             this.list_drives.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.list_drives.Location = new System.Drawing.Point(25, 209);
             this.list_drives.Name = "list_drives";
-            this.list_drives.Size = new System.Drawing.Size(157, 105);
+            this.list_drives.Size = new System.Drawing.Size(137, 84);
             this.list_drives.TabIndex = 1;
             this.list_drives.WrapContents = false;
             // 
@@ -734,7 +742,7 @@
             this.hRichTextBox1.SelectionRightIndent = 0;
             this.hRichTextBox1.ShorcutEnabled = false;
             this.hRichTextBox1.ShowSelectionMargin = false;
-            this.hRichTextBox1.Size = new System.Drawing.Size(575, 128);
+            this.hRichTextBox1.Size = new System.Drawing.Size(528, 128);
             this.hRichTextBox1.TabIndex = 0;
             this.hRichTextBox1.Text = "hRichTextBox1";
             this.hRichTextBox1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
@@ -752,9 +760,19 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 34);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(8, 3, 8, 8);
-            this.tabPage3.Size = new System.Drawing.Size(622, 349);
+            this.tabPage3.Size = new System.Drawing.Size(572, 318);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Startup Apps";
+            // 
+            // LB_CntStartupApps
+            // 
+            this.LB_CntStartupApps.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.LB_CntStartupApps.AutoSize = true;
+            this.LB_CntStartupApps.Location = new System.Drawing.Point(22, 276);
+            this.LB_CntStartupApps.Name = "LB_CntStartupApps";
+            this.LB_CntStartupApps.Size = new System.Drawing.Size(96, 17);
+            this.LB_CntStartupApps.TabIndex = 10;
+            this.LB_CntStartupApps.Text = "0 startup apps.";
             // 
             // btn_reloadlistappstartup
             // 
@@ -782,7 +800,7 @@
             this.btn_reloadlistappstartup.ImagePadding = new System.Windows.Forms.Padding(0);
             this.btn_reloadlistappstartup.ImageSize = new System.Drawing.Size(20, 20);
             this.btn_reloadlistappstartup.IsAutoSize = false;
-            this.btn_reloadlistappstartup.Location = new System.Drawing.Point(343, 289);
+            this.btn_reloadlistappstartup.Location = new System.Drawing.Point(296, 268);
             this.btn_reloadlistappstartup.Name = "btn_reloadlistappstartup";
             this.btn_reloadlistappstartup.Radius = new HeCopUI_Framework.Struct.CornerRadius(0F, 0F, 0F, 0F);
             this.btn_reloadlistappstartup.RippleColor = System.Drawing.Color.Black;
@@ -828,7 +846,7 @@
             this.btn_disappstartup.ImagePadding = new System.Windows.Forms.Padding(0);
             this.btn_disappstartup.ImageSize = new System.Drawing.Size(20, 20);
             this.btn_disappstartup.IsAutoSize = false;
-            this.btn_disappstartup.Location = new System.Drawing.Point(480, 289);
+            this.btn_disappstartup.Location = new System.Drawing.Point(433, 268);
             this.btn_disappstartup.Name = "btn_disappstartup";
             this.btn_disappstartup.Radius = new HeCopUI_Framework.Struct.CornerRadius(0F, 0F, 0F, 0F);
             this.btn_disappstartup.RippleColor = System.Drawing.Color.Black;
@@ -881,14 +899,14 @@
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(52)))), ((int)(((byte)(58)))));
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dataGridView1.EnableHeadersVisualStyles = false;
-            this.dataGridView1.Location = new System.Drawing.Point(25, 42);
+            this.dataGridView1.Location = new System.Drawing.Point(25, 48);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -912,7 +930,7 @@
             this.dataGridView1.ShowCellToolTips = false;
             this.dataGridView1.ShowEditingIcon = false;
             this.dataGridView1.ShowRowErrors = false;
-            this.dataGridView1.Size = new System.Drawing.Size(575, 230);
+            this.dataGridView1.Size = new System.Drawing.Size(528, 210);
             this.dataGridView1.TabIndex = 0;
             // 
             // CH_Name
@@ -941,35 +959,22 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 34);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(8, 3, 8, 8);
-            this.tabPage4.Size = new System.Drawing.Size(622, 349);
+            this.tabPage4.Size = new System.Drawing.Size(572, 318);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Processes";
-            // 
-            // LB_CntStartupApps
-            // 
-            this.LB_CntStartupApps.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.LB_CntStartupApps.AutoSize = true;
-            this.LB_CntStartupApps.Location = new System.Drawing.Point(22, 289);
-            this.LB_CntStartupApps.Name = "LB_CntStartupApps";
-            this.LB_CntStartupApps.Size = new System.Drawing.Size(96, 17);
-            this.LB_CntStartupApps.TabIndex = 10;
-            this.LB_CntStartupApps.Text = "0 startup apps.";
             // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BorderColor1 = System.Drawing.Color.DodgerBlue;
-            this.BorderLinearGradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
-            this.ClientSize = new System.Drawing.Size(658, 453);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(52)))), ((int)(((byte)(59)))));
+            this.ClientSize = new System.Drawing.Size(607, 383);
             this.Controls.Add(this.hTabControl1);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HeaderHeight = 35;
+            this.ForeColor = System.Drawing.Color.White;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Device Care";
-            this.TitleFont = new System.Drawing.Font("Segoe UI", 11F);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.hTabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);

@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace Device_Care
 {
-    public partial class Form1 : HeCopUI_Framework.Forms.HFormFlat
+    public partial class Form1 : Form
     {
         public Form1()
         {
@@ -59,7 +59,31 @@ namespace Device_Care
             {
                 dataGridView1.Rows.Add(item.Name, item.Path, Process_Care.ConvertEnumToString(item.AppStartupType));
             }
-            LB_CntStartupApps.Text=list.Count.ToString()+" startup apps.";
+            LB_CntStartupApps.Text=list.Count.ToString()+" startup app(s).";
+        }
+
+        private void hButton1_MouseClick(object sender, MouseEventArgs e)
+        {
+            if(e.Button== MouseButtons.Left)
+            {
+                Form2 form2 = new Form2();  
+                form2.Show();
+            }    
+        }
+
+        private void hCheckBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            // Cleanup history files
+        }
+
+        private void hCheckBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            // Cleanup temperary files
+        }
+
+        private void hCheckBox3_CheckedChanged(object sender, EventArgs e)
+        {
+            // Cleanup cache files
         }
     }
 }
